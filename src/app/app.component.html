@@ -1,0 +1,14 @@
+<div class="header">
+  <div class="nav">
+      <ul>
+        <li *ngFor="let menu of menuList" class="nav nav-pills nav-stacked">
+            <span>
+                <a [routerLink]="menu.routerLink" routerLinkActive="active">{{menu.name}}</a>
+            </span>
+        </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

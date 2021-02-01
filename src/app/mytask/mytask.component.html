@@ -1,0 +1,5 @@
+<div *ngFor="let task of tasklist" >
+    <a routerLink="/task/{{task.id}}">
+        {{task.name}}
+    </a>
+</div>
